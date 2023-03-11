@@ -1,0 +1,13 @@
+[core]
+	editor = nano
+[user]
+	name = inferno0230
+	email = adityachoudhury0230@gmail.com
+[color]
+	ui = auto
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
