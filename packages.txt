@@ -53,7 +53,9 @@ endeavour
 eva
 evince
 exfatprogs
+extra-cmake-modules
 f2fs-tools
+feh
 ffmpeg-audio-thumbnailer
 ffmpegthumbnailer
 file
@@ -119,6 +121,7 @@ grep
 grilo-plugins
 grub
 grub-btrfs
+grub-theme-manjaro
 gthumb
 gtksourceview-pkgbuild
 gufw
@@ -140,6 +143,7 @@ iproute2
 iptables-nft
 iputils
 jfsutils
+kvantum-manjaro
 less
 lib32-libva-vdpau-driver
 lib32-mesa-vdpau
@@ -163,6 +167,25 @@ lvm2
 malcontent
 man-db
 man-pages
+manjaro-alsa
+manjaro-base-skel
+manjaro-browser-settings
+manjaro-gdm-branding
+manjaro-gnome-backgrounds
+manjaro-gnome-extension-settings
+manjaro-gnome-settings
+manjaro-gstreamer
+manjaro-hello
+manjaro-input
+manjaro-log-helper
+manjaro-modem
+manjaro-printer
+manjaro-pulse
+manjaro-ranger-settings
+manjaro-release
+manjaro-settings-manager-notifier
+manjaro-system
+manjaro-zsh-config
 mdadm
 memtest86+
 memtest86+-efi
@@ -199,6 +222,7 @@ ntp
 numlockx
 nvidia-prime
 nvidia-utils
+obs-studio-git
 openbsd-netcat
 openresolv
 openssh
@@ -211,6 +235,7 @@ pamac-gtk
 papirus-maia-icon-theme
 pciutils
 perl
+plymouth-theme-manjaro
 polkit-gnome
 power-profiles-daemon
 premid
@@ -249,6 +274,7 @@ tar
 telegram-desktop
 texinfo
 timeshift
+timeshift-autosnap-manjaro
 totem
 touche
 tracker3-miners
@@ -264,6 +290,7 @@ usbutils
 util-linux
 uudeview
 uxplay-git
+vala
 vi
 vim
 virt-manager
