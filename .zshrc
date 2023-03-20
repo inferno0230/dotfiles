@@ -1,3 +1,4 @@
+source /etc/profile.d/vte.sh
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -41,7 +42,7 @@ ZSH_THEME="half-life"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -99,4 +100,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export EDITOR='nano'
+alias installclean=". b*/e* && lunch aosp_martini-userdebug && m installclean"
+alias pep="cd ~/and*/pep"
+alias magisk="adb sideload /home/inferno0230/scripts/root.apk"
+alias 'sideload'="adb reboot sideload-auto-reboot"
+alias rsideload="adb reboot sideload"
 
+#function sideload(){adb reboot sideload-auto-reboot && sleep 30 && adb sideload $1}
