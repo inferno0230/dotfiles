@@ -104,7 +104,20 @@ export EDITOR='nano'
 alias installclean=". b*/e* && lunch aosp_martini-userdebug && m installclean"
 alias pep="cd ~/and*/pep"
 alias magisk="adb sideload /home/inferno0230/scripts/root.apk"
-alias 'sideload'="adb reboot sideload-auto-reboot"
 alias rsideload="adb reboot sideload"
+function sideload() {
+  if [ $# -eq 0 ]; then
+    adb reboot sideload
+  else
+    adb reboot sideload-auto-reboot
+    (sleep 30 && adb sideload "$@") &
+  fi
+}
 
-#function sideload(){adb reboot sideload-auto-reboot && sleep 30 && adb sideload $1}
+alias tlauncher='java /opt/minecraft/tlauncher.jar'
+export CCACHE_DIR=~/.ccache
+export CCACHE_EXEC=$(which ccache)
+export USE_CCACHE=1
+ccache -M 100G
+ccache -o compression=true
+ccache -z
