@@ -116,8 +116,12 @@ function sideload() {
 
 alias tlauncher='java /opt/minecraft/tlauncher.jar'
 export CCACHE_DIR=~/.ccache
+export CC=/usr/lib/ccache/bin/clang
+export CXX=/usr/lib/ccache/bin/clang++
+export PATH=/usr/lib/ccache/bin:$PATH
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
 ccache -M 100G
-ccache -o compression=true
-ccache -z
+alias vpnon="sudo systemctl start wg-quick@linux"
+alias vpnoff="sudo systemctl stop wg-quick@linux"
+alias webui="zsh ~/stable*/webui.sh"
